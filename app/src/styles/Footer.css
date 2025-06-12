@@ -1,0 +1,88 @@
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap');
+   .footer {
+     background-color: #201B21;
+     padding: 38px;
+     font-family: 'Poppins', sans-serif;
+     text-align: center;
+     border-top: 1px solid #eee;
+     display: flex; /* Aligner horizontalement */
+     justify-content: space-between; /* Espacer les éléments */
+     align-items: center; /* Centrer verticalement les éléments */
+   }
+   
+   .footer-content {
+     display: flex;
+     margin-left: 170px;
+     align-items: center;
+     gap: 10px; /* espace entre l'image et le texte */
+   }
+   
+   .footer-content img {
+     width: 25px;
+     height: 25px;
+     width: auto;
+   }
+   
+   .footer-brand {
+     font-weight: bold;
+     color: #eee;
+     font-size: 1.3rem;
+   }
+   
+   .footer-text {
+     font-size: 0.9rem;
+     color: #777;
+   }
+   
+   .footer-icons {
+     display: flex; /* Afficher les icônes en ligne */
+     margin-right: 150px;
+     gap: 16px; /* Espacement entre les icônes */
+   }
+   
+   .footer-icons svg {
+     font-size: 1.5rem; /* Taille des icônes */
+     color: #eee;
+     cursor: pointer;
+     transition: color 0.3s;
+   }
+   
+   .footer-icons svg:hover {
+     color: #1da1f2; /* Changer la couleur au survol (par exemple, bleu pour Twitter) */
+   }
+
+   /* Responsive mobile-first : tout en colonne */
+@media screen and (max-width: 768px) {
+  .footer {
+    position: relative;
+    padding-bottom: 40px;
+    height: 15vh;
+  }
+
+  .footer-content {
+    margin-left: 67px;
+  }
+
+  .footer-brand {
+    margin-left: 0;
+    display: flex;
+    margin-top: 5px;
+  }
+
+  .footer-text {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-right: 160px;
+    font-size: 0.8rem;
+    color: #777;
+  }
+
+  .footer-icons {
+    margin-top: 10px;
+    margin-right: 50px;
+  }
+}
+

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap');
+
+.homepage {
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+    background-color: #fff;
+    width: 98.9vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* ==================== ANIMATIONS ==================== */
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ==================== BANNER ==================== */
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f4f6;
+  padding: 5rem;
+  border-radius: 12px;
+  margin: 3rem 10rem 10rem 10rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+.banner-content {
+  max-width: 50%;
+}
+
+.discount {
+  color: #EC5E2A;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.headline {
+  font-size: 64px;
+  margin: 0.5rem 0;
+  margin-top: -16px;
+}
+
+.shop-button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shop-button:hover {
+  background-color: #333;
+}
+
+.promo-image {
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ==================== PRODUITS ==================== */
+
+.products {
+  padding: 8rem;
+  margin-top: -14%;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  margin-left: 45px;
+}
+
+.product-list {
+  display: grid;
+  margin-top: -6px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  animation: fadeZoom 0.6s ease forwards;
+  opacity: 0;
+}
+
+/* Animation delay en cascade */
+
+.product-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.product-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.product-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.product-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.product-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.product-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.product-card h3 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.product-card p {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card strong {
+  color: #111;
+  font-size: 1rem;
+}
+
+.product-info {
+  margin-top: 10px;
+  margin-left: 38px;
+  text-align: justify;
+}
+
+.product-info h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.product-info p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.product-info strong {
+  font-size: 1.2rem;
+  color: #000;
+}
+  
+  /* ==================== RESPONSIVE DESIGN ==================== */
+
+@media screen and (max-width: 768px) {
+  .homepage {
+    height: auto;
+    width: 100%;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 70px;
+    margin-bottom: 95px;
+  }
+
+  .banner-content {
+    max-width: 100%;
+  }
+
+  .discount {
+    font-size: 32px;
+  }
+
+  .headline {
+    font-size: 40px;
+    margin-top: 0;
+  }
+
+  .promo-image {
+    max-width: 90%;
+    margin-top: 1rem;
+  }
+
+  .products {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    text-align: start;
+  }
+
+  .product-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .product-card {
+    flex: 0 0 auto;
+    width: 80%;
+    scroll-snap-align: start;
+  }
+
+  .product-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .product-card p {
+    font-size: 0.85rem;
+  }
+
+  .product-info {
+    margin-left: 38px;
+  }
+
+  .product-card strong {
+    font-size: 0.95rem;
+  }
+
+  .shop-button {
+    padding: 0.65rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+  

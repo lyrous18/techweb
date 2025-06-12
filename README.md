@@ -6,7 +6,7 @@ Il est composé d'un frontend développé en **React.js** et d'un backend en **N
 ---
 
 
-## 📖 Description du projet
+# Description du projet
 
 **E-commerce de la vente de chaussures** est une plateforme web permettant aux utilisateurs de :
 
@@ -18,15 +18,15 @@ Ce projet a été conçu dans un but pédagogique pour apprendre et mettre en pr
 
 ---
 
-## 🛠️ Technologies utilisées
+# Technologies utilisées
 
-### Frontend
+# Frontend
 - [React.js](https://react.dev/)
 - [React Router](https://reactrouter.com/)
 - [Axios](https://axios-http.com/)
 - [CSS3](https://developer.mozilla.org/fr/docs/Web/CSS)
 
-### Backend
+# Backend
 - [Node.js](https://nodejs.org/)
 - [Express.js](https://expressjs.com/)
 - [Sequelize (ORM)](https://sequelize.org/)
@@ -34,10 +34,10 @@ Ce projet a été conçu dans un but pédagogique pour apprendre et mettre en pr
 
 ---
 
-## Documentation Swagger
+# Documentation Swagger
  Le Swagger sont disponible sur cette lien: http://localhost:3000/api-docs
 
-## 💾Mode de l'Installation
+# Mode de l'Installation
 /* COTE FRONTEND */
 cd app/
 npm install
@@ -49,6 +49,6 @@ npm install
 npm run dev
 
 
-### 1️⃣ Cloner le projet
+# Cloner le projet
 ```bash
-git clone -b master https://github.com/KoolHenikaja/techweb.git
+git clone -b master https://github.com/lyrous18/techweb.git

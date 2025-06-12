@@ -1,0 +1,1 @@
+L'API sera disponible sur http://localhost:3000/api/shoes et http://localhost:3000/api/purchases

@@ -23,7 +23,7 @@ module.exports = {
   test: {
     username: process.env.DB_USER || 'root',
     password: process.env.DB_PASS || null,
-    database: process.env.DB_NAME || 'commerce_test',
+    database: process.env.DB_NAME || 'commerce',
     host: process.env.DB_HOST || '127.0.0.1',
     dialect: 'mysql'
   },

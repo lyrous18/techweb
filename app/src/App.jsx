@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import BagPage from "./pages/BagPage";
 import ProductPage from "./pages/ProductPage";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Routes>
@@ -14,6 +14,6 @@ function App() {
       </Routes>
     </Router>
   );
-}
+};
 
-export default App
+export default App;

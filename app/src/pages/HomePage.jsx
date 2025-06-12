@@ -139,7 +139,7 @@ const HomePage = () => {
           <h2 className="discount">25% OFF</h2>
           <h1 className="headline">Summer Sale</h1>
           <p>Discover our summer styles with discount</p>
-          <button className="shop-button">Shop Now →</button>
+          <Link to={'/product/1'} className="shop-button">Shop Now →</Link>
         </div>
         <img src={banner} alt="Promo Shoe" className="promo-image" />
       </section>
